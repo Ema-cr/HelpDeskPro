@@ -43,6 +43,9 @@ export default function Home() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 px-4">
       <div className="max-w-md w-full bg-white rounded-xl shadow-2xl p-8">
         <div className="text-center mb-8">
+          <div className="flex justify-center mb-4">
+            <img src="/logo-icon.svg" alt="HelpDeskPro Logo" className="w-16 h-16" />
+          </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             HelpDeskPro
           </h1>
@@ -87,12 +90,6 @@ export default function Home() {
               Sign Up
             </Link>
           </p>
-        </div>
-        
-        <div className="mt-6 p-4 bg-gray-50 rounded-lg text-sm text-gray-600">
-          <p className="font-semibold mb-2">Test Accounts:</p>
-          <p className="mb-1"><strong>Agent:</strong> agent@helpdeskpro.com / agent123</p>
-          <p><strong>Client:</strong> alice@example.com / client123</p>
         </div>
       </div>
     </div>

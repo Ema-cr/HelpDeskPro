@@ -1,0 +1,38 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded square background -->
+  <rect width="128" height="128" rx="28" fill="url(#mainGradient)"/>
+  
+  <!-- Shine effect -->
+  <rect width="128" height="64" rx="28" fill="url(#shineGradient)"/>
+  
+  <!-- Email/Message icon - modern style -->
+  <g transform="translate(24, 32)">
+    <!-- Envelope body -->
+    <rect x="8" y="16" width="64" height="44" rx="6" fill="white" stroke="white" stroke-width="2"/>
+    
+    <!-- Envelope flap/top -->
+    <path d="M 8 16 L 40 38 L 72 16" 
+          fill="none" 
+          stroke="url(#mainGradient)" 
+          stroke-width="3" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Message lines inside -->
+    <line x1="20" y1="36" x2="60" y2="36" stroke="url(#mainGradient)" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="20" y1="44" x2="52" y2="44" stroke="url(#mainGradient)" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="20" y1="52" x2="48" y2="52" stroke="url(#mainGradient)" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  </g>
+</svg>

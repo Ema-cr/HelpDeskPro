@@ -1,0 +1,40 @@
+<svg width="220" height="50" viewBox="0 0 220 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon Background -->
+  <rect x="2" y="2" width="46" height="46" rx="12" fill="url(#logoGrad)"/>
+  
+  <!-- Email/Message Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Envelope body -->
+    <rect x="4" y="10" width="22" height="16" rx="2" fill="white"/>
+    
+    <!-- Envelope flap -->
+    <path d="M 4 10 L 15 18 L 26 10" 
+          fill="none" 
+          stroke="url(#logoGrad)" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Message lines -->
+    <line x1="8" y1="16" x2="22" y2="16" stroke="url(#logoGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+    <line x1="8" y1="20" x2="19" y2="20" stroke="url(#logoGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+  </g>
+  
+  <!-- Text "HelpDesk" -->
+  <text x="58" y="33" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#1f2937">
+    HelpDesk
+  </text>
+  
+  <!-- Text "Pro" with gradient -->
+  <text x="165" y="33" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="url(#logoGrad)">
+    Pro
+  </text>
+</svg>
