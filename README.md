@@ -206,47 +206,6 @@ Abre (http://localhost:3000) en tu navegador.
 - `GET /api/comments?ticketId=[id]` - Obtener comentarios de un ticket
 - `POST /api/comments` - Agregar comentario
 
-## 🚀 Despliegue en Vercel
-
-### 1. Preparar el Proyecto
-
-```bash
-npm run build
-```
-
-### 2. Conectar con Vercel
-
-1. Crea una cuenta en [Vercel](https://vercel.com)
-2. Instala Vercel CLI: `npm i -g vercel`
-3. Ejecuta: `vercel login`
-
-### 3. Desplegar
-
-```bash
-vercel --prod
-```
-
-### 4. Configurar Variables de Entorno en Vercel
-
-En el dashboard de Vercel, ve a Settings → Environment Variables y agrega:
-- `MONGODB_URI`
-- `JWT_SECRET`
-- `EMAIL_HOST`
-- `EMAIL_PORT`
-- `EMAIL_USER`
-- `EMAIL_PASS`
-- `EMAIL_FROM`
-- `NEXT_PUBLIC_APP_URL` (URL de tu app en Vercel)
-- `CRON_REMINDER_ENABLED`
-- `CRON_REMINDER_HOURS_THRESHOLD`
-
-### 5. Redeploy
-
-Después de configurar las variables, haz redeploy:
-
-```bash
-vercel --prod
-```
 
 ## 📸 Capturas de Pantalla
 
@@ -264,18 +223,6 @@ vercel --prod
 
 ### Detalle de Ticket con Comentarios
 ![Ticket Detail](docs/screenshots/ticket-detail.png)
-
-## 📝 Notas Importantes
-
-### Cron Jobs en Vercel
-- Vercel Serverless Functions tienen un límite de ejecución de 10 segundos
-- Para cron jobs en producción, considera usar:
-  - **Vercel Cron Jobs** (requiere plan Pro)
-  - **GitHub Actions** con scheduled workflows
-  - Servicios externos como **EasyCron** o **cron-job.org**
-
-### Alternativa de Cron con API
-Puedes crear un endpoint `/api/cron/reminders` y llamarlo periódicamente desde un servicio externo.
 
 ## 🤝 Contribuir
 
