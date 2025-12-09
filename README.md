@@ -206,7 +206,6 @@ Abre (http://localhost:3000) en tu navegador.
 - `GET /api/comments?ticketId=[id]` - Obtener comentarios de un ticket
 - `POST /api/comments` - Agregar comentario
 
-
 ## 📸 Capturas de Pantalla
 
 ### Login
